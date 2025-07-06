@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TEST-TAG on 博客</title>
+    <link>http://117.72.90.90/tags/test-tag/</link>
+    <description>Recent content in TEST-TAG on 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 24 Jan 2025 22:00:00 +0800</lastBuildDate><atom:link href="http://117.72.90.90/tags/test-tag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TEST</title>
+      <link>http://117.72.90.90/note/2025/01/24/test/</link>
+      <pubDate>Fri, 24 Jan 2025 22:00:00 +0800</pubDate>
+      
+      <guid>http://117.72.90.90/note/2025/01/24/test/</guid>
+      <description>图片     数学公式 $$\cfrac{1}{2}$$
+代码块 int main(void) { return 0; }  </description>
+    </item>
+    
+  </channel>
+</rss>

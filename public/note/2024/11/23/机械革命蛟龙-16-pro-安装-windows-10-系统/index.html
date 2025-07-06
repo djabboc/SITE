@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>机械革命蛟龙 16 Pro 安装 Windows 10 系统 | 博客</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">机械革命蛟龙 16 Pro 安装 Windows 10 系统</span></h1>
+
+<h2 class="date">2024/11/23</h2>
+</div>
+
+<main>
+<p>机械革命蛟龙 16 Pro 预装 Windows 11，如果想要重新安装 Win10 系统也可以</p>
+<p>但是重装系统之后，驱动基本都掉光了</p>
+<ul>
+<li>
+<p>声卡驱动掉了，扬声器声音特别小</p>
+</li>
+<li>
+<p>显卡驱动掉了，导致屏幕没有高刷</p>
+</li>
+<li>
+<p>无线 WIFI 网卡驱动掉了，导致无法搜索/连接 WIFI</p>
+</li>
+</ul>
+<p>还好算它仁慈，给我留了一个有线网卡驱动，否则就麻烦了&hellip;</p>
+<p>具体步骤：</p>
+<ol>
+<li>
+<p>准备一个 Windows 10 22H2 系统 U 盘</p>
+</li>
+<li>
+<p>开机狂按 F2 进入 Bios 安装系统，调整启动方式 EFI</p>
+<p>
+
+
+
+    
+        
+        
+        
+
+        <a href="/images/%E8%9B%9F%E9%BE%9916P-Bios-EFI_hu5118606351e7ad5b0828f9baf3873212_2563430_800x0_resize_q75_h2_box_3.webp" target="view_window">
+            <picture>
+                <img
+                    src="/images/%E8%9B%9F%E9%BE%9916P-Bios-EFI_hu5118606351e7ad5b0828f9baf3873212_2563430_800x0_resize_q75_h2_box_3.webp"
+                    alt="未命名图片"
+                    loading="lazy"
+                />
+            </picture>
+        </a>
+
+
+</p>
+</li>
+<li>
+<p>机械革命官网下载所有 16P 驱动压缩包</p>
+<p>解压之后，用管理员身份运行压缩包里面的 install bat 脚本</p>
+<p>依次安装主板、显卡、声卡、网卡、无线网卡等驱动</p>
+<p>注意无线网卡驱动不要装成 Intel 版本</p>
+<p>最后安装 AMD R7/R9 Bios 驱动，此后将会自动重启</p>
+<p>虽然官网说是只有 Win11 对应驱动，但是 Win10 22H2 版本亲测也能使用</p>
+</li>
+</ol>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+  
+  <hr/>
+  © <a href="/">我的博客</a> 2024 &ndash; 2025 | <a href="https://github.com/">Github</a> | <a href="https://twitter.com/">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

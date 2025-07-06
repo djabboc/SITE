@@ -1,0 +1,28 @@
+{{ $image := resources.GetMatch .Destination }}
+{{ $text := .Text | default "未命名图片" }}
+{{ if $image }}
+
+    {{ $rawImage := $image }}
+        
+        <!-- 调用图片函数：修改图片横向像素数量 400，修改图片格式 webp，注意这不会改变图片本身尺寸-->
+        {{ $rawImage := $rawImage.Resize "800x webp" }}
+
+        <a href="{{ $rawImage.RelPermalink }}" target="view_window">
+            <picture>
+                <img
+                    src="{{ $rawImage.RelPermalink }}"
+                    {{ with $text }}alt="{{ . }}"{{ end }}
+                    loading="lazy"
+                />
+            </picture>
+        </a>
+
+{{ else }}
+    <a href="{{ .Destination | safeURL }}" target="view_window">
+        <img
+            src="{{ .Destination | safeURL }}"
+            {{ with $text }}alt="{{ . }}"{{ end }}
+            loading="lazy"
+        />
+    </a>
+{{ end }}

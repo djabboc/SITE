@@ -1,0 +1,87 @@
+# 最短网址
+baseURL: 'http://117.72.90.90/'
+
+server:
+  # 服务端口
+  bind: "0.0.0.0"
+
+port: 8000
+
+# 显示草稿页面
+buildDrafts: true
+
+languageCode: "zh-cn"
+title: "博客"
+theme: "hugo-xmin"
+
+# 忽略这些文件
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+
+# 在脚注中显示一个返回符号（↩）
+footnotereturnlinkcontents: "↩"
+
+# 定义不同类型内容的 URL 结构
+permalinks:
+  note: "/note/:year/:month/:day/:slug/"
+  post: "/post/:year/:month/:day/:slug/"
+
+# 网站的主菜单
+menu:
+  main:
+    - name: Home
+      url: ""
+      weight: 1
+    - name: About
+      url: "about/"
+      weight: 2
+    - name: Categories
+      url: "categories/"
+      weight: 3
+    - name: Tags
+      url: "tags/"
+      weight: 4
+    - name: Subscribe
+      url: "index.xml"
+
+# 自定义参数
+params:
+  description: "A website built through Hugo and blogdown."
+  footer: "&copy; [我的博客](/) 2024 -- {Year} | [Github](https://github.com/) | [Twitter](https://twitter.com/)"
+
+# 标记语言
+markup:
+  highlight:
+    codeFences: false
+
+  # Goldmark 是 Hugo 的 Markdown 渲染引擎
+  goldmark:
+    renderer:
+      # 允许渲染未转义的 HTML 和 JavaScript
+      unsafe: true
+    extensions:
+      # 启用原始内容传递功能
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+    renderHooks:
+      image:
+        enableDefault: true
+module:
+  # 启动挂载功能
+  mounts:
+  
+  # 模块中的 assets 目录中的内容将会被复制到网站构建输出的 assets 目录？
+  - source: assets
+    target: assets
+  
+  # 模块中的 static 目录中的内容也将会被复制到网站构建输出的 assets 目录？
+  - source: static
+    target: assets
