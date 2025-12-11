@@ -1,10 +1,12 @@
 ---
-title: "公司内部搭建 Gitea 服务"
+title: "WSL 开发 VS Code 插件"
 date: 2025-12-10T23:00:00+08:00
 draft: true
 categories:
 - 工具
 ---
+
+## 说明
 
 实在不想 node/npm 污染我的 Windows 物理机
 
