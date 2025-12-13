@@ -1,5 +1,5 @@
 ---
-title: "DOTA2 · 倾天之战第四幕 · 荆棘之巢第一层"
+title: "DOTA2 倾天之战第四幕 荆棘之巢第一层"
 date: 2024-12-01T01:45:50+08:00
 draft: true
 categories: 
