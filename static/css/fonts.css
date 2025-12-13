@@ -1,0 +1,48 @@
+/* 基础字体设置 */
+body {
+    /* 优化后的字体栈 - 优先使用系统原生清晰字体 */
+    font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji";
+
+    /* 增大字体大小（推荐 16-18px 基础） */
+    font-size: 18px;
+
+    /* 优化行高，提高可读性 */
+    line-height: 1.6;
+
+    /* 字体渲染优化 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* 代码字体优化 */
+code,
+pre {
+    /* 现代等宽字体栈 */
+    font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Code",
+        "Roboto Mono", "Source Code Pro", "Ubuntu Mono",
+        monospace;
+
+    /* 代码字号调整为 90% */
+    font-size: 90%;
+
+    /* 代码行高 */
+    line-height: 1.5;
+}
+
+/* 标题字体优化（可选） */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Helvetica Neue", Arial,
+        sans-serif;
+    font-weight: 600;
+    /* 稍微加粗，更清晰 */
+}
