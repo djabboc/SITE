@@ -12,4 +12,4 @@ categories:
 
 可惜最终还是没能举盾，好像每次都是只差一点
 
-![](/images/DOTA2-BO5.jpg)
+<img src="/images/DOTA2-BO5.jpg" width="50%">
