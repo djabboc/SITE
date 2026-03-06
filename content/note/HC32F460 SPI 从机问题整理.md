@@ -1,5 +1,5 @@
 ---
-title: "HC32F4A0 SPI Slave 问题整理"
+title: "HC32F4A0 SPI 从机问题整理"
 date: 2026-03-05T13:30:00+08:00
 draft: true
 categories: 
